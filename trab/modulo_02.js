@@ -1,4 +1,4 @@
-const input = require('readline-sync');
+//const input = require('readline-sync');
 
 //1. Faça um programa que calcule a soma de 5 números, e mostra o resultado da soma para o usuário.
 
@@ -115,4 +115,91 @@ const input = require('readline-sync');
 // while(cont != 49){
 //     cont = cont+1
 //     console.log(cont)
+// }
+
+// let falta = 5;
+// let diasAula = 200;
+
+// let porcentoFalta = (falta / 100) * diasAula
+
+// document.write(porcentoFalta)
+
+// let notas = 0;
+// let mediaMinima = 7;
+// let faltaLimiteMax = 20;
+// for(let i = 1; i <= 4; i++){
+
+//     let nota = Number(prompt('Digite a sua ' +i+ 'º nota'));
+//     if(isNaN(nota) && nota >= 0 && nota <= 10){
+//         notas += nota
+//         let media = notas/4;
+
+//         if(i === 4){
+//             let diasAula = Number(prompt('Digite a quantidade de dias de aulas '))
+//             let falta = Number(prompt('Digite quantidade de faltas '))
+//             let percentualFaltas = (falta / diasAula) * 100
+            
+//             if(media >= mediaMinima && media <= 10 && percentualFaltas < faltaLimiteMax){
+//                 document.write(`Aprovado com média ${media} e com ${percentualFaltas.toFixed(2)}% de faltas.`)
+
+//             }else if(media >= 3 && media < mediaMinima && percentualFaltas < faltaLimiteMax){
+//                 document.write(`Em recuperação com média ${media} e com ${percentualFaltas.toFixed(2)}% de faltas.`)
+
+//             }else if(media >= 0 && media < 3 || percentualFaltas < faltaLimiteMax){
+//                 document.write(`Reprovado com média ${media} e com ${percentualFaltas.toFixed(2)}% de faltas!`)
+            
+//             }
+//         }
+            
+//     }else{
+//         alert('Valor Inválido');
+//         break
+        
+//     }
+        
+// }
+
+
+// let notas = 0;
+// let mediaMinima = 7;
+// let faltaLimiteMax = 20;
+// for(let i = 1; i <= 4; i++){
+
+//     let nota = Number.parseInt(prompt('Digite a sua ' +i+ 'º nota'));
+//     if(Number.parseInt(nota) || nota >= 0 || nota <= 10){
+//         notas += nota
+//         let media = notas/4;
+        
+//         if(i === 4){
+//             let diasAula = prompt('Digite a quantidade de dias de aulas ')
+//             let falta = prompt('Digite quantidade de faltas ')
+//             let percentualFaltas = (falta / diasAula) * 100
+            
+//             if(media >= mediaMinima && media <= 10 && percentualFaltas < faltaLimiteMax){
+//                 document.write(`Aprovado com média ${media} e com ${percentualFaltas.toFixed(2)}% de faltas.`)
+
+//             }else if(media >= 3 && media < mediaMinima && percentualFaltas < faltaLimiteMax){
+//                 document.write(`Em recuperação com média ${media} e com ${percentualFaltas.toFixed(2)}% de faltas.`)
+
+//             }else if(media >= 0 && media < 3 || percentualFaltas < faltaLimiteMax){
+//                 document.write(`Reprovado com média ${media} e com ${percentualFaltas.toFixed(2)}% de faltas!`)
+            
+//             }
+//         }        
+//     }
+//     let tentativas = 3;
+//     while(!isNaN(nota)){
+//         tentativas = tentativas - 1;
+//         alert('Digite apenas números! Você tem apenas ' + tentativas + 'tentativas' );
+//         nota = Number(prompt('Digite a sua ' +i+ 'º nota'));
+//         if(Number.parseInt(nota) && nota >= 0 && nota <= 10){
+//             notas += nota;
+//             break
+//         }else if(tentativas == 0){
+//             alert('Encerrando por excesso de tentativas errada!')
+//             i = 4
+            
+//         }
+//     }
+        
 // }
